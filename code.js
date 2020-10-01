@@ -39,6 +39,6 @@ function sayHello(input){
 }
 
 function isFive(input){
-    return input === 5;
+    return (parseInt(input)) === 5;
 }
 
