@@ -47,3 +47,12 @@ describe("sayHello", function(){
         expect(sayHello([2])).toBe("I cannot say hello to an object...");
     });
 });
+
+describe("isFive", function(){
+    it("should be a defined function", function(){
+        expect(typeof isFive).toBe("function");
+    });
+    it("should return a boolean for any input", function(){
+        expect(typeof isFive()).toBe("boolean");
+    });
+});

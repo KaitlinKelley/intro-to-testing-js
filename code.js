@@ -38,3 +38,7 @@ function sayHello(input){
 
 }
 
+function isFive(input){
+    return input === 5;
+}
+
