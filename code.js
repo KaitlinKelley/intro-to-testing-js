@@ -15,6 +15,11 @@ function helloWorld() {
 //------Refactoring....
 
 function sayHello(input){
-    return "Hello, " + input + "!";
+    if(input === undefined || input === true || input === false){
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
+
 }
 
