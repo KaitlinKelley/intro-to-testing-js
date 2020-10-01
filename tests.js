@@ -115,4 +115,16 @@ describe("isVowel", function(){
     it("should return false for 'y'", function(){
         expect(isVowel("y")).toBe(false);
     });
+    it("should return false for 4", function(){
+        expect(isVowel(4)).toBe(false);
+    });
+    it("should return false for an input of either true or false", function(){
+        expect(isVowel(true || false)).toBe(false);
+    });
+    it("should return false for 'banana'", function(){
+        expect(isVowel("banana")).toBe(false);
+    });
+    it("should return false when called with no argument", function(){
+        expect(isVowel()).toBe(false);
+    });
 });

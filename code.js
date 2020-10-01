@@ -46,7 +46,23 @@ function isEven(input){
     return input % 2 ===  0;
 }
 
-function isVowel(input){
-    return (input === "a" || input === "A");
-}
+// function isVowel(input){
+//     return (input === "a" || input === "A");
+// }
 
+function isVowel(input) {
+    switch (input) {
+        case "a":
+        case "A":
+        case "e":
+        case "E":
+        case "i":
+        case "I":
+        case "o":
+        case "O":
+        case "u":
+        case "U":
+            return true;
+    }
+    return false;
+}
