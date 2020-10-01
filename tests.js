@@ -40,4 +40,10 @@ describe("sayHello", function(){
     it("should return the string 'Hello, World!' when called and input === false", function(){
        expect(sayHello(false)).toBe("Hello, World!");
     });
+    it("should return the string 'I cannot say hello to a number...' when called and input type is a number", function(){
+        expect(sayHello(1)).toBe("I cannot say hello to a number...");
+    });
+    it("should return the string 'I cannot say hello to an object...' when called and input type is an object", function(){
+        expect(sayHello([2])).toBe("I cannot say hello to an object...");
+    });
 });

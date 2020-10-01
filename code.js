@@ -14,11 +14,26 @@ function helloWorld() {
 
 //------Refactoring....
 
+// function sayHello(input){
+//     if(input === undefined || input === true || input === false){
+//         return "Hello, World!";
+//     } else {
+//         return "Hello, " + input + "!";
+//     }
+//
+// }
+
+//------Refactoring some more....
+
 function sayHello(input){
-    if(input === undefined || input === true || input === false){
-        return "Hello, World!";
-    } else {
+    if(typeof input === "string"){
         return "Hello, " + input + "!";
+    } else if(typeof input === "number"){
+        return "I cannot say hello to a number...";
+    } else if(typeof input === "object") {
+        return "I cannot say hello to an object...";
+    } else {
+        return "Hello, World!";
     }
 
 }
