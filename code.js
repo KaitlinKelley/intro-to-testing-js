@@ -42,3 +42,7 @@ function isFive(input){
     return (parseInt(input)) === 5;
 }
 
+function isEven(input){
+    return input % 2 ===  0;
+}
+
