@@ -84,4 +84,16 @@ describe("isEven", function(){
     it("should return false for 'banana'", function(){
         expect(isEven("banana")).toBe(false);
     });
+    it("should return true for '8'", function(){
+        expect(isEven("8")).toBe(true);
+    });
+    it("should return false for Infinity", function(){
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it("should return false for a boolean input", function(){
+        expect(isEven(true||false)).toBe(false);
+    });
+    it("should return false when called without an argument", function(){
+        expect(isEven()).toBe(false);
+    });
 });
